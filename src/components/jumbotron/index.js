@@ -7,7 +7,7 @@ import {
   Title,
   SubTitle,
   Image,
-} from "./styles/jumbotron";
+} from "./styles/jumbotron.js";
 
 const Jumbotron = ({ children, direction = "row", ...restProps }) => {
   return (
