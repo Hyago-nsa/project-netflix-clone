@@ -1,4 +1,6 @@
 import React from "react";
+import { MagnifyingGlassIcon, BellIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -20,7 +22,18 @@ const Header = () => {
         </ul>
       </div>
 
-      <div></div>
+      <div>
+        <MagnifyingGlassIcon className="hidden sm:inline h-6 w-6" />
+        <p className="hidden lg:inline">Kids</p>
+        <BellIcon className="h-6 w-6" />
+        <Link href="./account">
+          <img
+            src="https://rb.gy/g1pwyx"
+            alt=""
+            className="cursor-pointer rounded"
+          />
+        </Link>
+      </div>
     </header>
   );
 };
